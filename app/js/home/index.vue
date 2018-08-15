@@ -1,6 +1,7 @@
 <template lang="html">
     <div :class="$style.home">
         <h1>Home</h1>
+        <p>abcd</p>
     </div>
 </template>
 
@@ -13,6 +14,6 @@ export default {
   @import '../../css/reset.scss';
   .home{
     color: red;
-    font-size: 80px;
+    font-size: 40px;
   }
 </style>
