@@ -23,7 +23,7 @@ export default {
                 src: "//img12.360buyimg.com/jrpmobile/jfs/t25195/34/538079874/44233/59252c2e/5b72bdc0N8cbe97c9.jpg?width=750&height=320",
             }, {
                 href: "home",
-                src: "//img12.360buyimg.com/jrpmobile/jfs/t24202/13/2034121921/43894/5d15d425/5b72bddeN695ce42d.jpg?width=750&height=320",
+                src: "//img12.360buyimg.com/jrpmobile/jfs/t24187/24/2107306777/42617/896ed155/5b741129Nb4983492.jpg?width=750&height=320",
             },
             {
                 href: "home",
