@@ -14,7 +14,7 @@
                 </router-link>
             </li>
             <li>
-                <router-link :to="{name: 'home'}">
+                <router-link :to="{name: 'borrowmoney'}">
                     <img src="//img12.360buyimg.com/jrpmobile/jfs/t18640/141/744623906/1296/82809719/5aa79389N46ec948f.png?width=40&height=40" alt="">
                     <p>借钱</p>
                 </router-link>
@@ -53,7 +53,7 @@ export default {
         right: 0;
         bottom: 0;
         height: 100px;
-        margin: 0;
+        margin: 0 !important;
         z-index: 101;
         h4 {
             display: none;
