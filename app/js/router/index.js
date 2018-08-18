@@ -3,6 +3,7 @@ import Router from "vue-router"
 import Home from "../home/index.vue"
 import MakeMoney from "../makemoney/index.vue"
 import BorrowMoney from "../borrowmoney/index.vue"
+import SaveMoney from "../savemoney/index.vue"
 import "../../css/reset.scss"
 
 Vue.use(Router)
@@ -21,6 +22,10 @@ export default new Router({
             path: "/borrowmoney",
             name: "borrowmoney",
             component: BorrowMoney,
+        }, {
+            path: "/savemoney",
+            name: "savemoney",
+            component: SaveMoney,
         },
     ],
 })

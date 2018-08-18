@@ -20,7 +20,7 @@
                 </router-link>
             </li>
             <li>
-                <router-link :to="{name: 'home'}">
+                <router-link :to="{name: 'savemoney'}">
                     <img src="//img12.360buyimg.com/jrpmobile/jfs/t19729/201/1027312338/1395/95cecd48/5ab85d0eN01f81011.png?width=56&height=56" alt="">
                     <p>省钱</p>
                 </router-link>

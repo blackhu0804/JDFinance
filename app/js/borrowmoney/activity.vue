@@ -25,22 +25,16 @@ export default {
         > h4 {
             display: none;
         }
-        > h3 {
-            height: 112px;
-            padding: 0 32px;
-            line-height: 112px;
-            font-size: 32px;
-            font-weight: 700;
-            color: #333333;
-        }
         .content {
             @include flex(row);
             img:first-child, img:nth-child(2) {
                 width: 50%;
+                height: 224px;
                 box-sizing: border-box;
             }
             img:last-child {
                 width: 100%;
+                height: 230px;
             }
             padding-bottom: 100px;
         }

@@ -32,6 +32,7 @@ export default {
                 title: "一成首付购车",
             }],
             options: {
+                speed: 1500,
                 autoplay: true,
                 loop: true,
                 pagination: {
