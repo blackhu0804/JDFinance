@@ -91,6 +91,7 @@ export default {
                     }
                     p {
                         padding-left: 30px;
+                        color: #333;
                     }
                     .title {
                         margin: 22px 0;

@@ -66,6 +66,7 @@ export default {
                 text-align: center;
                 a {
                     text-decoration: none;
+                    color: #656565;
                 }
                 img {
                     width: 44px;
@@ -75,7 +76,6 @@ export default {
                 }
                 p {
                     font-size: 22px;
-                    color: #656565;
                 }
 
             }
@@ -86,7 +86,7 @@ export default {
 <style lang="scss">
     .router-link-exact-active {
         p {
-            color: rgb(70, 104, 255) !important;
+            color: rgb(70, 104, 255) ;
         }
     }
 </style>
