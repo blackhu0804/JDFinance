@@ -25,3 +25,6 @@
 - Vue 可以使用 template 或者 render 函数管理 HTML 内容，而 template 是常规的做法，因为 render 对开发者的要求比较高，需要对 Vue 的 API 非常了解，不然弄巧成拙。
 - 使用 template 所见即所得，再结合预编译工具更容易开发和调试、用最简单的方式完成任务不是很好吗？也更适合团队的需要。
 
+**3. 使用`webpack4`和`webpack-dev-server` 不能运行**
+
+降级使用webpack3
