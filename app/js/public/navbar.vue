@@ -1,34 +1,10 @@
 <template lang="html">
     <Panel title="导航条" :class="$style.panel">
-        <ul :class="$style.content">
-            <li>
-                <router-link :to="{name: 'home'}">
-                    <img src="https://img12.360buyimg.com/jrpmobile/jfs/t17587/158/1300523690/1908/eabacaac/5ac4850bNdf876dd8.png?width=60&height=60" alt="">
-                    <p>首页</p>
-                </router-link>
-            </li>
-            <li>
-                <router-link :to="{name: 'makemoney'}">
-                    <img src="//img12.360buyimg.com/jrpmobile/jfs/t7690/252/3621724688/1715/757a3ca1/59e9d81bN27304850.png?width=60&height=60" alt="">
-                    <p>赚钱</p>
-                </router-link>
-            </li>
-            <li>
-                <router-link :to="{name: 'borrowmoney'}">
-                    <img src="//img12.360buyimg.com/jrpmobile/jfs/t18640/141/744623906/1296/82809719/5aa79389N46ec948f.png?width=40&height=40" alt="">
-                    <p>借钱</p>
-                </router-link>
-            </li>
-            <li>
-                <router-link :to="{name: 'savemoney'}">
-                    <img src="//img12.360buyimg.com/jrpmobile/jfs/t19729/201/1027312338/1395/95cecd48/5ab85d0eN01f81011.png?width=56&height=56" alt="">
-                    <p>省钱</p>
-                </router-link>
-            </li>
-            <li>
-                <router-link :to="{name: 'download'}">
-                    <img src="//img12.360buyimg.com/jrpmobile/jfs/t10897/141/1894216742/2046/ad0e8dc1/59e9d7feNaa5dd2fd.png?width=60&height=60" alt="">
-                    <p>金融会员</p>
+        <ul :class="$style.content" >
+            <li v-for="(item, index) in items" :key="item.title">
+                <router-link :to="{name: item.href}">
+                    <img :src="item.src" :alt="item.title">
+                    <p>{{ item.title }}</p>
                 </router-link>
             </li>
         </ul>
@@ -40,6 +16,31 @@ import Panel from "../core/panel.vue"
 export default {
     components: {
         Panel,
+    },
+    data() {
+        return {
+            items: [{
+                href: "home",
+                src: "//img12.360buyimg.com/jrpmobile/jfs/t17587/158/1300523690/1908/eabacaac/5ac4850bNdf876dd8.png?width=60&height=60",
+                title: "首页",
+            }, {
+                href: "makemoney",
+                src: "//img12.360buyimg.com/jrpmobile/jfs/t7690/252/3621724688/1715/757a3ca1/59e9d81bN27304850.png?width=60&height=60",
+                title: "赚钱",
+            }, {
+                href: "borrowmoney",
+                src: "//img12.360buyimg.com/jrpmobile/jfs/t18640/141/744623906/1296/82809719/5aa79389N46ec948f.png?width=40&height=40",
+                title: "借钱",
+            }, {
+                href: "savemoney",
+                src: "//img12.360buyimg.com/jrpmobile/jfs/t19729/201/1027312338/1395/95cecd48/5ab85d0eN01f81011.png?width=56&height=56",
+                title: "省钱",
+            }, {
+                href: "download",
+                src: "//img12.360buyimg.com/jrpmobile/jfs/t10897/141/1894216742/2046/ad0e8dc1/59e9d7feNaa5dd2fd.png?width=60&height=60",
+                title: "金融会员",
+            }],
+        }
     },
 }
 </script>
@@ -65,6 +66,7 @@ export default {
                 text-align: center;
                 a {
                     text-decoration: none;
+                    color: #656565;
                 }
                 img {
                     width: 44px;
@@ -74,9 +76,17 @@ export default {
                 }
                 p {
                     font-size: 22px;
-                    color: #656565;
                 }
+
             }
+        }
+    }
+</style>
+
+<style lang="scss">
+    .router-link-exact-active {
+        p {
+            color: rgb(70, 104, 255) ;
         }
     }
 </style>
