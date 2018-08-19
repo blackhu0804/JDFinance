@@ -4,6 +4,7 @@ import Home from "../home/index.vue"
 import MakeMoney from "../makemoney/index.vue"
 import BorrowMoney from "../borrowmoney/index.vue"
 import SaveMoney from "../savemoney/index.vue"
+import Download from "../special/index.vue"
 import "../../css/reset.scss"
 
 Vue.use(Router)
@@ -26,6 +27,10 @@ export default new Router({
             path: "/savemoney",
             name: "savemoney",
             component: SaveMoney,
+        }, {
+            path: "/download",
+            name: "download",
+            component: Download,
         },
     ],
 })

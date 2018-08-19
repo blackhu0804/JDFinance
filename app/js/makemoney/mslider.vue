@@ -45,6 +45,9 @@ export default {
         .content {
             margin-top: 120px;
             .slider {
+                img {
+                    width: 100%;
+                }
             }
         }
     }

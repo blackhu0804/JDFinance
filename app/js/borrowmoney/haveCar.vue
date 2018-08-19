@@ -1,6 +1,6 @@
 <template lang="html">
     <Panel title="有车有钱" :class="$style.panel">
-        <h3>有车有钱</h3>
+        <h2>有车有钱</h2>
         <section :class="$style.content">
             <div :class="$style.imgBox">
                 <img src="https://img12.360buyimg.com/jrpmobile/jfs/t22774/46/1735806175/76049/3a394283/5b690b9aN054ad12e.png?width=375&height=233" alt="">
@@ -25,7 +25,7 @@ export default {
         @include panel;
         padding-top: 42.5px;
         margin-bottom: 0 !important;
-        > h3 {
+        > h2 {
             color: #000;
             font-weight: 500;
             margin: 0 26px 26px;

@@ -1,6 +1,6 @@
 <template lang="html">
     <Panel title="白条服务" :class="$style.panel">
-        <h3>白条服务</h3>
+        <h2>白条服务</h2>
         <section :class="$style.content">
             <img src="https://m.jr.jd.com/vip/borrowMoney/widget/bannerAndCar/i/whiteCard.png" alt="">
             <div :class="$style.credit">
@@ -33,7 +33,7 @@ export default {
             background-color: #f3f5f7;
             display: block;
         }
-        > h3 {
+        > h2 {
             padding-top: 42.5px;
             color: #000;
             font-weight: 500;
